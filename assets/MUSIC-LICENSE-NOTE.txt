@@ -1,0 +1,6 @@
+MUSIC PLACEHOLDER INSTRUCTIONS
+
+The `music.mp3` file in this project is intentionally empty and is not playable audio.
+Replace it with a valid MP3 recording that you own or are licensed to use, preferably gentle instrumental piano with subtle sitar or ambient strings.
+Keep the filename `music.mp3`, or edit `audio.source` in ../config.json.
+Audio playback is user-initiated only; the site does not autoplay sound.

@@ -1,0 +1,217 @@
+{
+  "couple": {
+    "partnerOne": "Nilesh",
+    "partnerOneHindi": "नीलेश",
+    "partnerTwo": "Akansha",
+    "partnerTwoHindi": "आकांशा",
+    "partnerOneFull": "Nilesh Vishwakarma",
+    "partnerOneFullHindi": "नीलेश विश्वकर्मा",
+    "partnerTwoFull": "Akansha Vishwakarma",
+    "partnerTwoFullHindi": "आकांशा विश्वकर्मा",
+    "monogramFirst": "N",
+    "monogramSecond": "A",
+    "monogram": "N & A"
+  },
+  "event": {
+    "eventType": "Ring Ceremony & Engagement",
+    "eventTypeHindi": "शुभ सगाई समारोह",
+    "invitationTagline": "WITH THE BLESSINGS OF OUR ELDERS",
+    "invitationTaglineHindi": "पूज्य पूर्वजों एवं बड़ों के शुभाशीर्वाद से",
+    "ceremonySubHindi": "शुभ सगाई समारोह • अंगूठी रस्म",
+    "ceremonySubEn": "The Royal Ring Ceremony & Engagement",
+    "coverShloka": "दो दिलों का यह पवित्र बंधन, प्रेम और विश्वास की अमर कहानी बने",
+    "coverShlokaEn": "A Sacred Bond of Love & Eternal Trust",
+    "dateDisplay": "Wednesday, 11 November 2026",
+    "dateDisplayHindi": "बुधवार, 11 नवम्बर 2026",
+    "dateShort": "11 • 11 • 2026",
+    "timeDisplay": "12:00 PM Onwards",
+    "timeDisplayHindi": "दोपहर 12:00 बजे से",
+    "shubhMuhurat": "12:15 PM (Shubh Muhurat)",
+    "shubhMuhuratHindi": "दोपहर 12:15 बजे (शुभ मुहूर्त)",
+    "dateTimeLocal": "2026-11-11T12:00:00+05:30",
+    "startTimeIso": "20261111T063000Z",
+    "endTimeIso": "20261111T103000Z",
+    "timeZone": "Asia/Kolkata",
+    "ringsQuoteHindi": "अंगूठी का यह गोलाकार घेरा, अनंत प्रेम और अटूट विश्वास का प्रतीक है,\nजिसका न कोई आदि है और न कोई अंत।",
+    "ringsQuoteEnglish": "As these rings are exchanged, two promises become one sacred journey of a lifetime.",
+    "closingSubHindi": "आपकी गरिमामयी उपस्थिति हमारे इस मांगलिक उत्सव की शोभा बढ़ाएगी।",
+    "closingCopy": "Your gracious presence and heartfelt blessings will make this sacred milestone truly memorable.",
+    "schedule": [
+      {
+        "symbol": "🪔",
+        "time": "12:00",
+        "period": "PM",
+        "timeLabelHindi": "दोपहर",
+        "indexHindi": "०१ / आगमन एवं स्वागत",
+        "indexEn": "01 / WELCOME & GATHER",
+        "titleHindi": "शुभ ओली एवं वरीक्षा रस्म",
+        "titleEn": "Oli and Variksha Ceremony",
+        "descriptionHindi": "दोनों परिवारों का आत्मीय स्वागत, पारंपरिक तिलक रस्म एवं शुभाशीर्वाद का आदान-प्रदान।",
+        "descriptionEn": "Floral welcoming of all guests and families, traditional tilak, and exchange of auspicious blessings.",
+        "isFeatured": false
+      },
+      {
+        "symbol": "💍",
+        "time": "01:00",
+        "period": "PM",
+        "timeLabelHindi": "दोपहर",
+        "indexHindi": "०२ / मुद्रिका संस्कार",
+        "indexEn": "02 / THE SACRED PROMISE",
+        "titleHindi": "शुभ सगाई समारोह (अंगूठी रस्म)",
+        "titleEn": "Ring Ceremony & Engagement",
+        "descriptionHindi": "नीलेश एवं आकांशा द्वारा पवित्र मुद्रिका का विनिमय, जीवनपर्यंत साथ निभाने का वचन एवं पुष्प वर्षा।",
+        "descriptionEn": "Nilesh and Akansha exchange engagement rings, making solemn promises of eternal devotion amidst elder blessings.",
+        "isFeatured": true,
+        "muhuratNoteHindi": "शुभ मुहूर्त: दोपहर 12:15 बजे (शुभ मुहूर्त)",
+        "muhuratNoteEn": "(Shubh Muhurat 12:15 PM)"
+      },
+      {
+        "symbol": "🌺",
+        "time": "02:00",
+        "period": "PM",
+        "timeLabelHindi": "दोपहर",
+        "indexHindi": "०३ / प्रीतिभोज एवं स्नेह मिलन",
+        "indexEn": "03 / ROYAL BANQUET & CELEBRATION",
+        "titleHindi": "स्वरुचिर भोजन एवं स्नेह मिलन",
+        "titleEn": "Lunch & Celebrations",
+        "descriptionHindi": "स्वादिष्ट राजसी भोजन, मधुर संगीत एवं नवयुगल को शुभाशीर्वाद।",
+        "descriptionEn": "Delightful celebratory lunch, photography session with the couple, and celebration of joy.",
+        "isFeatured": false
+      }
+    ]
+  },
+  "sanctum": {
+    "omBadge": "ॐ",
+    "blessingHeading": "॥ श्री गणेशाय नमः ॥",
+    "shlokaDevanagari": "वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।\nनिर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥",
+    "shlokaMeaningHindi": "हे विशालकाय, वक्र सूंड वाले, करोड़ों सूर्यों के समान तेजस्वी विघ्नहर्ता भगवान श्री गणेश!\nहमारे इस मंगल कार्य को सदैव निर्विघ्न रूप से पूर्ण करें।",
+    "shlokaMeaningEn": "By the grace of God and with the eternal blessings of our revered ancestors & beloved parents, we cordially invite you with family to bless the couple.",
+    "sacredTag": "॥ मांगल्य शुभारंभ ॥",
+    "blessingLineHindi": "ईश्वर की असीम अनुकंपा एवं पूज्य पूर्वजों के शुभाशीर्वाद से",
+    "blessingLineEn": "With the divine benevolence of the Almighty and eternal blessings of our revered ancestors"
+  },
+  "family": {
+    "familyLine": "Vishwakarma Family",
+    "familyLineHindi": "विश्वकर्मा परिवार",
+    "invitationLineHindi": "हम अत्यंत हर्ष और स्नेहपूर्वक आपको हमारे परिवार के शुभ आयोजन में सपरिवार सादर आमंत्रित करते हैं।",
+    "invitationLineEn": "By the grace of God and with the eternal blessings of our revered ancestors & beloved parents, we cordially invite you with family",
+    "groom": {
+      "courtBadgeHindi": "वर पक्ष / Groom's Side",
+      "clanNameHindi": "विश्वकर्मा परिवार",
+      "clanNameEn": "The Vishwakarma Family, Katni (M.P.)",
+      "ancestorsTagHindi": "पूज्य पूर्वज एवं कुलदेवता",
+      "ancestorsTagEn": "Revered Ancestors & Elders",
+      "ancestorsNameHindi": "पूज्य दादा-दादी जी का शुभाशीर्वाद",
+      "ancestorsNameEn": "With the divine blessings of family ancestors",
+      "parentsTagHindi": "माता-पिता जी",
+      "parentsTagEn": "Parents",
+      "motherNameHindi": "श्रीमती खुशलता विश्वकर्मा",
+      "motherNameEn": "Smt. Khushlata Vishwakarma",
+      "fatherNameHindi": "श्री मनसुखलाल विश्वकर्मा जी",
+      "fatherNameEn": "Shri Mansukhlal Vishwakarma ji",
+      "coupleTagHindi": "वर",
+      "coupleTagEn": "The Groom",
+      "nameHindi": "नीलेश विश्वकर्मा",
+      "nameEn": "Nilesh Vishwakarma"
+    },
+    "bride": {
+      "courtBadgeHindi": "वधू पक्ष / Bride's Side",
+      "clanNameHindi": "विश्वकर्मा परिवार",
+      "clanNameEn": "The Vishwakarma Family, Katni (M.P.)",
+      "ancestorsTagHindi": "पूज्य पूर्वज एवं बुजुर्ग",
+      "ancestorsTagEn": "Revered Ancestors & Elders",
+      "ancestorsNameHindi": "पूज्य दादा-दादी एवं नाना-नानी का आशीर्वाद",
+      "ancestorsNameEn": "With eternal blessings of grandparents & ancestors",
+      "parentsTagHindi": "माता-पिता जी",
+      "parentsTagEn": "Parents",
+      "motherNameHindi": "श्रीमती माया विश्वकर्मा",
+      "motherNameEn": "Smt. Maya Vishwakarma",
+      "fatherNameHindi": "स्व. श्री राजेश विश्वकर्मा जी",
+      "fatherNameEn": "Late Shri Rajesh Vishwakarma ji",
+      "coupleTagHindi": "वधू",
+      "coupleTagEn": "The Bride",
+      "nameHindi": "आकांशा विश्वकर्मा",
+      "nameEn": "Akansha Vishwakarma"
+    }
+  },
+  "venue": {
+    "name": "Hotel Raj Palace",
+    "nameHindi": "होटल राज पैलेस",
+    "address": "Krishi Upaj Mandi Road, Paharua, Katni, Madhya Pradesh 483501 (near Sai Mandir)",
+    "addressHindi": "कृषि उपज मंडी मार्ग, पहरुआ, कटनी, मध्य प्रदेश ४८३५०१",
+    "city": "Katni, Madhya Pradesh",
+    "cityHindi": "कटनी, मध्य प्रदेश",
+    "landmark": "Near Sai Mandir",
+    "landmarkHindi": "साईं मंदिर के समीप / Near Sai Mandir",
+    "mapsQuery": "Hotel Raj Palace, Katni",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Raj%20Palace%2C%20Krishi%20Upaj%20Mandi%20Road%2C%20Paharua%2C%20Katni%2C%20Madhya%20Pradesh%20483501",
+    "amenities": [
+      "✓ निःशुल्क पार्किंग व्यवस्था / Valet Parking",
+      "✓ वातानुकूलित सभागार / AC Banquet",
+      "✓ पारंपरिक परिधान / Festive Formal"
+    ]
+  },
+  "patrika": {
+    "swagatakankshiTitleHindi": "स्वागताकांक्षी",
+    "swagatakankshiTitleEn": "Welcoming Hosts",
+    "swagatakankshiList": [
+      {
+        "nameHindi": "समस्त विश्वकर्मा परिवार",
+        "nameEn": "The Entire Vishwakarma Family, Katni"
+      },
+      {
+        "nameHindi": "श्रीमती खुशलता एवं श्री मनसुखलाल विश्वकर्मा",
+        "nameEn": "Groom's Parents"
+      },
+      {
+        "nameHindi": "श्रीमती माया एवं स्व. श्री राजेश विश्वकर्मा",
+        "nameEn": "Bride's Parents"
+      }
+    ],
+    "darshanabhilashiTitleHindi": "दर्शनाभिलाषी",
+    "darshanabhilashiTitleEn": "Eager to Welcome You",
+    "darshanabhilashiList": [
+      {
+        "nameHindi": "श्री शरद एवं लक्ष्मी विश्वकर्मा",
+        "nameEn": "Shri Sharad & Laxmi Vishwakarma, Katni"
+      },
+      {
+        "nameHindi": "सुजल विश्वकर्मा एवं रुद्र विश्वकर्मा",
+        "nameEn": "Sujal & Rudra Vishwakarma"
+      },
+      {
+        "nameHindi": "एवं समस्त रिश्तेदार व स्नेही स्वजन",
+        "nameEn": "Relatives, Friends & Well-wishers"
+      }
+    ],
+    "kidsQuoteHindi": "हमारी नीलेश भैया और आकांशा दीदी की सगाई में जलूल-जलूल (जरूर) आना!",
+    "kidsQuoteEn": "Please do grace our dear brother & sister's engagement with your love and presence!",
+    "kidsSignature": "— सुजल, रुद्र एवं परिवार के नन्हे-मुन्ने बच्चे"
+  },
+  "rsvp": {
+    "heading": "सम्पर्क एवं उपस्थिति पुष्टि / For Inquiries & RSVP:",
+    "contactPrimary": "+91 6265386842",
+    "primaryLabel": "श्री मनसुखलाल विश्वकर्मा",
+    "contactSecondary": "+91 9425465045",
+    "secondaryLabel": "विश्वकर्मा परिवार",
+    "whatsappNumber": "916265386842",
+    "whatsappMessage": "Namaste, we have received the Ring Ceremony invitation for Nilesh and Akansha."
+  },
+  "defaultBlessings": [
+    {
+      "name": "श्री शरद एवं लक्ष्मी विश्वकर्मा (Katni)",
+      "message": "May your journey together be adorned with endless affection, laughter, and lifelong understanding! Sada khush raho!",
+      "date": "2026-11-01T10:00:00Z"
+    },
+    {
+      "name": "सुजल विश्वकर्मा (Katni)",
+      "message": "Heartiest congratulations to Akansha & Nilesh on your auspicious ring ceremony. Two wonderful families unite today! 💍✨",
+      "date": "2026-11-02T11:30:00Z"
+    },
+    {
+      "name": "रुद्र विश्वकर्मा (Katni)",
+      "message": "What a stunning couple! May God shower his choicest blessings upon you both as you exchange these sacred rings.",
+      "date": "2026-11-03T14:15:00Z"
+    }
+  ]
+}
