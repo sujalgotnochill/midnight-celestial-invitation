@@ -206,7 +206,7 @@
     toastTimer = window.setTimeout(() => toast.classList.remove('is-visible'), 4000);
   }
 
-  /* Intro Screen Dismissal */
+  /* Intro Screen Dismissal & Music Start */
   function initIntro() {
     const intro = $('#intro');
     const button = $('#discover-button');
@@ -219,6 +219,7 @@
       window.setTimeout(() => {
         intro.hidden = true;
       }, 950);
+      startMusic();
     }
 
     button?.addEventListener('click', dismiss);
@@ -473,45 +474,62 @@
     }
   }
 
+  /* Music Controller Helpers */
+  function setMusicPlayingState(playing) {
+    const button = $('#music-control');
+    if (!button) return;
+    button.setAttribute('aria-pressed', String(playing));
+    button.setAttribute('aria-label', playing ? 'संगीत रोकें / Pause Music' : 'शुभ संगीत सुनें / Play Music');
+  }
+
+  async function startMusic() {
+    const button = $('#music-control');
+    const audio = $('#background-music');
+    if (button && button.getAttribute('aria-pressed') === 'true') return;
+
+    let playedFile = false;
+    if (audio && audio.src) {
+      try {
+        await audio.play();
+        playedFile = true;
+        setMusicPlayingState(true);
+      } catch (_) {
+        playedFile = false;
+      }
+    }
+
+    if (!playedFile) {
+      playIndianSynth();
+      setMusicPlayingState(true);
+      showToast('राजसी शहनाई एवं तानपुरा संगीत प्रारंभ / Playing Royal Ambient Melodies');
+    }
+  }
+
+  function pauseMusic() {
+    const audio = $('#background-music');
+    if (audio && !audio.paused) {
+      audio.pause();
+    }
+    stopIndianSynth();
+    setMusicPlayingState(false);
+  }
+
+  function toggleMusic() {
+    const button = $('#music-control');
+    if (!button) return;
+    const isPressed = button.getAttribute('aria-pressed') === 'true';
+    if (isPressed) {
+      pauseMusic();
+    } else {
+      startMusic();
+    }
+  }
+
   /* Music Controller */
   function initMusic() {
     const button = $('#music-control');
-    const audio = $('#background-music');
     if (!button) return;
-
-    function setPlaying(playing) {
-      button.setAttribute('aria-pressed', String(playing));
-      button.setAttribute('aria-label', playing ? 'संगीत रोकें / Pause Music' : 'शुभ संगीत सुनें / Play Music');
-    }
-
-    button.addEventListener('click', async () => {
-      const isPressed = button.getAttribute('aria-pressed') === 'true';
-
-      if (isPressed) {
-        if (audio && !audio.paused) {
-          audio.pause();
-        }
-        stopIndianSynth();
-        setPlaying(false);
-      } else {
-        let playedFile = false;
-        if (audio && audio.src) {
-          try {
-            await audio.play();
-            playedFile = true;
-            setPlaying(true);
-          } catch (_) {
-            playedFile = false;
-          }
-        }
-
-        if (!playedFile) {
-          playIndianSynth();
-          setPlaying(true);
-          showToast('राजसी शहनाई एवं तानपुरा संगीत प्रारंभ / Playing Royal Ambient Melodies');
-        }
-      }
-    });
+    button.addEventListener('click', toggleMusic);
   }
 
   /* Guestbook linked to config.defaultBlessings */
