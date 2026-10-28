@@ -556,108 +556,6 @@
     button.addEventListener('click', toggleMusic);
   }
 
-  /* Guestbook linked to config.defaultBlessings */
-  const STORAGE_KEY = 'midnight-celestial-blessings-v4';
-
-  function readBlessings() {
-    const defaultList = getNestedValue(config, 'defaultBlessings') || [];
-    try {
-      const data = localStorage.getItem(STORAGE_KEY);
-      if (data) {
-        const parsed = JSON.parse(data);
-        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
-      }
-      return defaultList;
-    } catch (_) {
-      return defaultList;
-    }
-  }
-
-  function renderBlessings(list) {
-    const container = $('#blessing-entries');
-    const empty = $('#empty-blessings');
-    const clear = $('#clear-blessings');
-    if (!container) return;
-
-    $$('.blessing-entry', container).forEach((n) => n.remove());
-
-    if (empty) empty.hidden = list.length > 0;
-    if (clear) clear.hidden = list.length === 0;
-
-    list.slice().reverse().forEach((item) => {
-      const card = document.createElement('article');
-      card.className = 'blessing-entry';
-      card.innerHTML = `
-        <h4 class="blessing-entry__name">${escapeHtml(item.name || item.nameHindi || '')}</h4>
-        <p class="blessing-entry__message">${escapeHtml(item.message || '')}</p>
-        <span class="blessing-entry__date">${item.date ? new Date(item.date).toLocaleDateString('hi-IN', { year: 'numeric', month: 'short', day: 'numeric' }) : 'शुभकामना'}</span>
-      `;
-      container.appendChild(card);
-    });
-  }
-
-  function initGuestbook() {
-    const form = $('#blessing-form');
-    const nameField = $('#guest-name');
-    const msgField = $('#guest-message');
-    const counter = $('#character-count');
-    const feedback = $('#form-feedback');
-    const clearBtn = $('#clear-blessings');
-    const wishChips = $$('.wish-chip');
-
-    let blessings = readBlessings();
-    renderBlessings(blessings);
-
-    wishChips.forEach((chip) => {
-      chip.addEventListener('click', () => {
-        const wish = chip.getAttribute('data-wish');
-        if (msgField && wish) {
-          msgField.value = wish;
-          if (counter) counter.textContent = `${wish.length} / 400`;
-          msgField.focus();
-        }
-      });
-    });
-
-    if (msgField && counter) {
-      msgField.addEventListener('input', () => {
-        counter.textContent = `${msgField.value.length} / 400`;
-      });
-    }
-
-    if (form) {
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const name = nameField?.value.trim();
-        const message = msgField?.value.trim();
-
-        if (!name || !message) {
-          if (feedback) feedback.textContent = 'कृपया अपना नाम और शुभकामना संदेश लिखें।';
-          return;
-        }
-
-        blessings.push({ name, message, date: new Date().toISOString() });
-        try {
-          localStorage.setItem(STORAGE_KEY, JSON.stringify(blessings));
-          if (feedback) feedback.textContent = 'आपका आशीर्वचन सफलतापूर्वक सहेज लिया गया है। धन्यवाद!';
-        } catch (_) {}
-
-        renderBlessings(blessings);
-        form.reset();
-        if (counter) counter.textContent = '0 / 400';
-        triggerStarburst(window.innerWidth * 0.5, Math.min(window.innerHeight * 0.7, 500), 16);
-      });
-    }
-
-    if (clearBtn) {
-      clearBtn.addEventListener('click', () => {
-        localStorage.removeItem(STORAGE_KEY);
-        blessings = [...(getNestedValue(config, 'defaultBlessings') || [])];
-        renderBlessings(blessings);
-        if (feedback) feedback.textContent = 'संदेश रीसेट कर दिए गए हैं।';
-      });
-    }
-  }
 
   /* Starfield Background Canvas */
   function initStarfield() {
@@ -782,7 +680,6 @@
     initCalendar();
     initSharing();
     initMusic();
-    initGuestbook();
     initStarfield();
     initPetals();
     initInteractiveClicks();

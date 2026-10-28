@@ -135,7 +135,6 @@
       <a href="#countdown-sec"><span>शुभ मुहूर्त / Muhurat</span></a>
       <a href="#venue"><span>स्थान / Venue</span></a>
       <a href="#hosts"><span>दर्शनाभिलाषी / Hosts</span></a>
-      <a href="#blessings"><span>आशीर्वाद / Wishes</span></a>
     </nav>
 
     <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
@@ -153,7 +152,6 @@
     <a href="#countdown-sec"><span>शुभ मुहूर्त / Muhurat Countdown</span></a>
     <a href="#venue"><span>स्थान / Venue &amp; Directions</span></a>
     <a href="#hosts"><span>दर्शनाभिलाषी / Cordial Hosts</span></a>
-    <a href="#blessings"><span>आशीर्वाद / Guest Wishes</span></a>
   </nav>
 
   <main id="main-content">
@@ -944,7 +942,7 @@
             <strong class="rsvp-heading-hi" data-bind="rsvp.heading">सम्पर्क एवं उपस्थिति पुष्टि / For Inquiries &amp;
               RSVP:</strong>
             <p class="rsvp-contacts">
-              <span><span data-bind="rsvp.primaryLabel">श्री मनसुखलाल विश्वकर्मा</span>: <strong
+              <span><span data-bind="rsvp.primaryLabel">श्री निलेश विश्वकर्मा</span>: <strong
                   data-bind="rsvp.contactPrimary">+91 9893224757</strong></span>
               <span class="rsvp-sep">•</span>
               <span><span data-bind="rsvp.secondaryLabel">विश्वकर्मा परिवार</span>: <strong
@@ -976,103 +974,6 @@
     </section>
 
 
-    <!-- ═══════════════════════════════════════════════════════════
-         SECTION 9: SACRED BLESSINGS & GUESTBOOK (आशीर्वचन कुंज)
-         Theme: Golden Sanctuary with Quick Blessing Tags & Live Feed
-         ═══════════════════════════════════════════════════════════ -->
-    <section class="blessings-section section-shell section-pad" id="blessings" aria-labelledby="blessings-title">
-      <div class="blessings-section__grid">
-        <div class="blessings-section__intro reveal">
-          <div class="section-pill">
-            <span class="pill-dot"></span>
-            <span class="pill-hi">शुभकामनाएं एवं आशीर्वचन</span>
-            <span class="pill-sep">•</span>
-            <span class="pill-en">Blessings &amp; Wishes</span>
-          </div>
-
-          <h2 id="blessings-title" class="section-title-dual">
-            <span class="title-hi">आपके शब्द, <em>हमारी धरोहर</em></span>
-            <span class="title-en">Your Words, Our Treasure</span>
-          </h2>
-
-          <p class="blessings-intro-hi">
-            नवयुगल <span data-bind="couple.partnerOneHindi">निलेश</span> एवं <span
-              data-bind="couple.partnerTwoHindi">आकांशा</span> के नए जीवन के शुभारंभ पर अपने प्रेमपूर्ण आशीर्वचन एवं
-            मंगलकामनाएं प्रेषित करें।
-          </p>
-          <p class="blessings-intro-en">
-            Share your heartfelt blessings and warm wishes for <span data-bind="couple.partnerOne">Nilesh</span> &amp;
-            <span data-bind="couple.partnerTwo">Akansha</span> as they embark on this sacred journey of companionship.
-          </p>
-
-          <!-- Quick Blessing Chips -->
-          <div class="quick-wishes">
-            <p class="quick-wishes-label">त्वरित शुभकामनाएं चुनें / Quick Blessing Options:</p>
-            <div class="quick-wishes-chips" id="quick-wishes-chips">
-              <button type="button" class="wish-chip"
-                data-wish="सगाई की हार्दिक बधाई एवं मंगलमय भविष्य की शुभकामनाएं!">🌸 सगाई की बधाई</button>
-              <button type="button" class="wish-chip"
-                data-wish="भगवान श्री गणेश की कृपा से आपका जीवन सदैव खुशहाल और समृद्ध रहे।">🪔 ईश्वर की कृपा
-                रहे</button>
-              <button type="button" class="wish-chip"
-                data-wish="May your journey together be adorned with endless affection, laughter, and lifelong understanding! Sada khush raho!">✨
-                सदा सुखी रहो</button>
-              <button type="button" class="wish-chip"
-                data-wish="Heartiest congratulations to Akansha & Nilesh on your auspicious ring ceremony. Two wonderful families unite today! 💍✨">💍
-                Congratulations!</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="guestbook reveal">
-          <form id="blessing-form" class="guestbook__form">
-            <div class="form-group">
-              <label for="guest-name">
-                <span class="label-hi">आपका शुभ नाम / Your Full Name</span>
-              </label>
-              <input id="guest-name" name="name" type="text" maxlength="60" autocomplete="name"
-                placeholder="उदा. सुरेश विश्वकर्मा / e.g. Suresh Vishwakarma" required>
-            </div>
-
-            <div class="form-group">
-              <label for="guest-message">
-                <span class="label-hi">आपका आशीर्वचन / Your Heartfelt Blessings</span>
-              </label>
-              <textarea id="guest-message" name="message" rows="4" maxlength="400"
-                placeholder="नवयुगल के लिए अपना शुभकामना संदेश लिखें..." required></textarea>
-            </div>
-
-            <div class="guestbook__form-footer">
-              <span id="character-count">0 / 400</span>
-              <button class="button button--primary" type="submit">
-                <span class="btn-text-dual">
-                  <strong class="btn-hi">आशीर्वाद प्रेषित करें</strong>
-                  <small class="btn-en">Send Blessing</small>
-                </span>
-                <svg viewBox="0 0 20 20" aria-hidden="true">
-                  <path d="M3 10h13M10 4l6 6-6 6" />
-                </svg>
-              </button>
-            </div>
-
-            <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
-          </form>
-
-          <div class="guestbook__divider">
-            <span></span>
-            <span>प्राप्त आशीर्वचन / Blessed Guestbook</span>
-            <span></span>
-          </div>
-
-          <div class="guestbook__entries" id="blessing-entries" aria-label="Blessings saved on this device">
-            <!-- Populated from config.defaultBlessings and local additions -->
-          </div>
-
-          <button class="text-link guestbook__clear" id="clear-blessings" type="button" hidden>स्थानीय रूप से सहेजे
-            संदेश हटाएं / Clear blessings saved on device</button>
-        </div>
-      </div>
-    </section>
 
 
     <!-- ═══════════════════════════════════════════════════════════

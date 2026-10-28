@@ -196,22 +196,5 @@
     "secondaryLabel": "विश्वकर्मा परिवार",
     "whatsappNumber": "919893224757",
     "whatsappMessage": "Namaste, we have received the Ring Ceremony invitation for Nilesh and Akansha."
-  },
-  "defaultBlessings": [
-    {
-      "name": "श्री शरद एवं लक्ष्मी विश्वकर्मा (Katni)",
-      "message": "May your journey together be adorned with endless affection, laughter, and lifelong understanding! Sada khush raho!",
-      "date": "2026-11-01T10:00:00Z"
-    },
-    {
-      "name": "सुजल विश्वकर्मा (Katni)",
-      "message": "Heartiest congratulations to Akansha & Nilesh on your auspicious ring ceremony. Two wonderful families unite today! 💍✨",
-      "date": "2026-11-02T11:30:00Z"
-    },
-    {
-      "name": "रुद्र विश्वकर्मा (Katni)",
-      "message": "What a stunning couple! May God shower his choicest blessings upon you both as you exchange these sacred rings.",
-      "date": "2026-11-03T14:15:00Z"
-    }
-  ]
+  }
 }
