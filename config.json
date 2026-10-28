@@ -1,11 +1,11 @@
 {
   "couple": {
     "partnerOne": "Nilesh",
-    "partnerOneHindi": "नीलेश",
+    "partnerOneHindi": "निलेश",
     "partnerTwo": "Akansha",
     "partnerTwoHindi": "आकांशा",
     "partnerOneFull": "Nilesh Vishwakarma",
-    "partnerOneFullHindi": "नीलेश विश्वकर्मा",
+    "partnerOneFullHindi": "निलेश विश्वकर्मा",
     "partnerTwoFull": "Akansha Vishwakarma",
     "partnerTwoFullHindi": "आकांशा विश्वकर्मा",
     "monogramFirst": "N",
@@ -59,7 +59,7 @@
         "indexEn": "02 / THE SACRED PROMISE",
         "titleHindi": "शुभ सगाई समारोह (अंगूठी रस्म)",
         "titleEn": "Ring Ceremony & Engagement",
-        "descriptionHindi": "नीलेश एवं आकांशा द्वारा पवित्र मुद्रिका का विनिमय, जीवनपर्यंत साथ निभाने का वचन एवं पुष्प वर्षा।",
+        "descriptionHindi": "निलेश एवं आकांशा द्वारा पवित्र मुद्रिका का विनिमय, जीवनपर्यंत साथ निभाने का वचन एवं पुष्प वर्षा।",
         "descriptionEn": "Nilesh and Akansha exchange engagement rings, making solemn promises of eternal devotion amidst elder blessings.",
         "isFeatured": true,
         "muhuratNoteHindi": "शुभ मुहूर्त: दोपहर 12:15 बजे (शुभ मुहूर्त)",
@@ -111,7 +111,7 @@
       "fatherNameEn": "Shri Mansukhlal Vishwakarma ji",
       "coupleTagHindi": "वर",
       "coupleTagEn": "The Groom",
-      "nameHindi": "नीलेश विश्वकर्मा",
+      "nameHindi": "निलेश विश्वकर्मा",
       "nameEn": "Nilesh Vishwakarma"
     },
     "bride": {
@@ -184,17 +184,17 @@
         "nameEn": "Relatives, Friends & Well-wishers"
       }
     ],
-    "kidsQuoteHindi": "हमारी नीलेश भैया और आकांशा दीदी की सगाई में जलूल-जलूल (जरूर) आना!",
+    "kidsQuoteHindi": "हमारी निलेश भैया और आकांशा दीदी की सगाई में जलूल-जलूल (जरूर) आना!",
     "kidsQuoteEn": "Please do grace our dear brother & sister's engagement with your love and presence!",
     "kidsSignature": "— सुजल, रुद्र एवं परिवार के नन्हे-मुन्ने बच्चे"
   },
   "rsvp": {
     "heading": "सम्पर्क एवं उपस्थिति पुष्टि / For Inquiries & RSVP:",
-    "contactPrimary": "+91 6265386842",
-    "primaryLabel": "श्री मनसुखलाल विश्वकर्मा",
-    "contactSecondary": "+91 9425465045",
+    "contactPrimary": "+91 9893224757",
+    "primaryLabel": "श्री निलेश विश्वकर्मा",
+    "contactSecondary": "+91 9630181723",
     "secondaryLabel": "विश्वकर्मा परिवार",
-    "whatsappNumber": "916265386842",
+    "whatsappNumber": "919893224757",
     "whatsappMessage": "Namaste, we have received the Ring Ceremony invitation for Nilesh and Akansha."
   },
   "defaultBlessings": [

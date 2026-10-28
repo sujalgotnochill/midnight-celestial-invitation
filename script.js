@@ -35,12 +35,36 @@
 
   async function loadConfig() {
     try {
-      const response = await fetch('config.json', { cache: 'no-cache' });
+      const response = await fetch(`config.json?_t=${Date.now()}`, { cache: 'no-cache' });
       if (response.ok) {
         config = await response.json();
       }
     } catch (error) {
       console.warn('Could not load config.json, using current DOM content.', error);
+    }
+  }
+
+  function initLiveConfigWatcher() {
+    if (window.location.protocol === 'file:') return;
+    if (['localhost', '127.0.0.1'].includes(window.location.hostname)) {
+      let lastRaw = JSON.stringify(config);
+      setInterval(async () => {
+        try {
+          const res = await fetch(`config.json?_t=${Date.now()}`);
+          if (res.ok) {
+            const fresh = await res.json();
+            const freshRaw = JSON.stringify(fresh);
+            if (lastRaw && freshRaw !== lastRaw) {
+              lastRaw = freshRaw;
+              config = fresh;
+              applyConfig();
+              console.info('[LiveUpdate] config.json changes applied automatically.');
+            } else if (!lastRaw) {
+              lastRaw = freshRaw;
+            }
+          }
+        } catch (_) {}
+      }, 1000);
     }
   }
 
@@ -63,7 +87,7 @@
     // 2. Dynamic Document Meta
     const partnerOne = getNestedValue(config, 'couple.partnerOne') || 'Nilesh';
     const partnerTwo = getNestedValue(config, 'couple.partnerTwo') || 'Akansha';
-    const partnerOneHi = getNestedValue(config, 'couple.partnerOneHindi') || 'नीलेश';
+    const partnerOneHi = getNestedValue(config, 'couple.partnerOneHindi') || 'निलेश';
     const partnerTwoHi = getNestedValue(config, 'couple.partnerTwoHindi') || 'आकांशा';
     const eventType = getNestedValue(config, 'event.eventType') || 'Ring Ceremony';
     const eventTypeHi = getNestedValue(config, 'event.eventTypeHindi') || 'शुभ सगाई समारोह';
@@ -180,7 +204,7 @@
 
     // 2. RSVP Call Button
     const callBtn = $('#rsvp-call-btn');
-    const primaryPhone = getNestedValue(config, 'rsvp.contactPrimary') || '+916265386842';
+    const primaryPhone = getNestedValue(config, 'rsvp.contactPrimary') || '+91 9893224757';
     if (callBtn) {
       callBtn.href = `tel:${primaryPhone.replace(/\s+/g, '')}`;
       const callText = callBtn.querySelector('span');
@@ -189,7 +213,7 @@
 
     // 3. RSVP WhatsApp Button
     const waBtn = $('#rsvp-whatsapp-btn');
-    const waNumber = getNestedValue(config, 'rsvp.whatsappNumber') || '916265386842';
+    const waNumber = getNestedValue(config, 'rsvp.whatsappNumber') || '919893224757';
     const waMsg = getNestedValue(config, 'rsvp.whatsappMessage') ||
       `Namaste, we have received the invitation for ${getNestedValue(config, 'couple.partnerOne') || 'Nilesh'} & ${getNestedValue(config, 'couple.partnerTwo') || 'Akansha'}.`;
     if (waBtn) {
@@ -336,7 +360,7 @@
 
     const partnerOne = getNestedValue(config, 'couple.partnerOne') || 'Nilesh';
     const partnerTwo = getNestedValue(config, 'couple.partnerTwo') || 'Akansha';
-    const partnerOneHi = getNestedValue(config, 'couple.partnerOneHindi') || 'नीलेश';
+    const partnerOneHi = getNestedValue(config, 'couple.partnerOneHindi') || 'निलेश';
     const partnerTwoHi = getNestedValue(config, 'couple.partnerTwoHindi') || 'आकांशा';
     const familyLine = getNestedValue(config, 'family.familyLine') || 'Vishwakarma Family';
     const venueName = getNestedValue(config, 'venue.name') || 'Hotel Raj Palace';
@@ -393,7 +417,7 @@
     if (!shareBtn) return;
 
     shareBtn.addEventListener('click', () => {
-      const partnerOneHi = getNestedValue(config, 'couple.partnerOneHindi') || 'नीलेश';
+      const partnerOneHi = getNestedValue(config, 'couple.partnerOneHindi') || 'निलेश';
       const partnerTwoHi = getNestedValue(config, 'couple.partnerTwoHindi') || 'आकांशा';
       const eventTypeHi = getNestedValue(config, 'event.eventTypeHindi') || 'शुभ सगाई समारोह';
       const familyClanHi = getNestedValue(config, 'family.familyLineHindi') || 'विश्वकर्मा परिवार';
@@ -762,6 +786,7 @@
     initStarfield();
     initPetals();
     initInteractiveClicks();
+    initLiveConfigWatcher();
   }
 
   document.addEventListener('DOMContentLoaded', init, { once: true });
